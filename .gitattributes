@@ -1,2 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+<head>
+<body>
+    <header class="header">
+    <div class="search-bar"></div>
+
+    <nav class="nav">
+      <button class="btn">Accedi</button>
+      <ul>
+        <li>Home</li>
+        <li>Articoli</li>
+        <li>Contatti</li>
+      </ul>
+      <div class="menu-icon">☰</div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>La rivoluzione digitale sostenibile</h1>
+      
+      <p>Promessa, mito e realtà nascosta</p>
+    </div>
+  </section>
+
+ 
+
+  <main class="content">
+
+    <section class="block two-cols">
+      <div class="text">
+        <h2>La rivoluzione digitale</h2>
+        <p> La rivoluzione digitale, spesso raccontata come un processo di smaterializzazione e alleggerimento dell’impatto umano sull’ambiente, nasconde in realtà una forte dipendenza da infrastrutture fisiche ed energivore. Le tecnologie dell’informazione e della comunicazione (ICT) costituiscono oggi uno dei settori a più rapida crescita in termini di consumo energetico globale. nternet, l’intelligenza artificiale, richiedono enormi quantità di elettricità, paragonabili a quelle di interi comparti industriali tradizionali. Il cosiddetto “cloud” non è un’entità immateriale: è composto da milioni di server ospitati in data center che funzionano senza interruzione, raffreddati da complessi sistemi di climatizzazione e collegati da una fitta rete di cavi terrestri e sottomarini. Questa infrastruttura, se alimentata da fonti fossili, contribuisce in modo significativo alle emissioni di gas serra, mettendo in discussione l’idea di una digitalizzazione intrinsecamente sostenibile.
+        </p>
+      </div>
+    </section>
+
+    <section class="block grid">
+      <div>
+        <img src="imm/img.2.jpg" alt="">
+        <h3>Materia, energia e rifiuti</h3>
+        <p> La fabbricazione di dispositivi elettronici come smartphone, computer e server richiede grandi quantità di materie prime, inclusi metalli rari, acqua ed energia.
+A ciò si aggiunge il problema crescente dei rifiuti elettronici. I dispositivi digitali hanno cicli di vita sempre più brevi, non perché cessino di funzionare, ma a causa di strategie di obsolescenza programmata e di una progettazione che ostacola la riparazione.
+        </p>
+      </div>
+
+      <div>
+        <img src="imm/img.3.jpg" alt="">
+      </div>
+    </section>
+
+    <section class="block two-cols">
+      <img src="imm/img.4.jpg" alt="">
+      <div class="text">
+        
+        <h3>Digitale, capitalismo e ambiente</h3>
+        
+        <p>
+          L’attuale sviluppo delle tecnologie digitali è strettamente intrecciato alle logiche del capitalismo globale, che privilegiano la crescita continua dei consumi e delle prestazioni. Fenomeni come le criptovalute rappresentano in modo emblematico questa dinamica: il mining digitale si configura come una vera e propria attività estrattiva, caratterizzata da un elevatissimo dispendio energetico e, in molti casi, alimentata da fonti fossili. Allo stesso modo, i supercomputer e i sistemi di intelligenza artificiale, pur avendo potenzialità enormi in ambito scientifico e ambientale, vengono spesso impiegati per ottimizzare l’estrazione di petrolio. Anche il commercio elettronico contribuisce a questo quadro: l’acquisto online incentiva il consumo impulsivo, aumentando la produzione di merci, gli imballaggi e l’impatto della logistica globale. Le strategie di sostenibilità promosse dalle Big Tech rischiano di tradursi in pratiche di greenwashing.
+
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+
+
+
+
+  <section class="hero end">
+    <div class="hero-text">
+      <h1>Oltre il mito della sostenibilità digitale</h1>
+      <p>Riparare, rallentare, pianificare</p>
+    </div>
+    
+  </section>
+
+ 
+
+  
+  <footer class="footer">
+    <div class="footer-nav">
+      <span>Chi siamo</span>
+      <span>Servizi</span>
+      <span>Progetti</span>
+      <span>Contatti</span>
+    </div>
+
+    <div class="footer-bottom">
+      <small>© 2026 Tutti i diritti riservati</small>
+    </div>
+  </footer>
+
+</body>
+</html>
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #000;
+  color: rgb(61, 255, 61);
+  line-height:1.6;
+
+  
+}
+
+main{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    
+}
+
+
+.header {
+  padding: 1rem;
+
+}
+
+.search-bar {
+  height: 30px;
+  background: #111;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+.btn {
+  background: hwb(120 24% 0%);
+  color: #000;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  cursor: pointer;
+}
+
+.menu-icon {
+  font-size: 1.4rem;
+}
+
+
+
+
+
+
+.hero {
+  position: relative;
+  height: 80vh;
+  background: url("/imm/img.1.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+}
+
+.hero.end {
+  
+  background: url("imm/img.5.jpg") center/cover no-repeat;
+  position: relative;
+  height: 80vh;
+  
+}
+
+.hero::after {
+  
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  
+}
+
+.hero-text {
+  position: relative;
+  padding: 2rem;
+  
+  max-width: 600px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+ padding: 1rem 0;
+  font-weight: bold;
+  background-color: rgb(0, 0, 0);
+   color:  hwb(120 24% 0%);
+  
+}
+
+.hero p {
+  margin-top: 0.5rem;
+  font-weight: regular;
+  opacity: 1;
+  color:  hwb(120 24% 0%);
+   background-color: #000000;
+  
+}
+
+
+.content {
+  padding: 2rem 2rem;
+}
+
+
+.block {
+  margin-bottom: 4rem;
+  
+}
+
+.two-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.block img {
+  width: 100%;
+  height:auto;
+ background: url(imm/img.3.jpg) center/cover no-repeat;
+ height:600px;
+  position:relative;
+  filter:grayscale(100%);
+  
+}
+
+h2, h3 {
+  margin-bottom: 1rem;
+}
+h3 { 
+    padding: 0.5rem 0;
+    
+}
+
+
+
+
+.footer {
+  padding: 2rem;
+  border-top: 1px solid hwb(120 24% 0%);
+
+}
+.footer-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 0.8rem;
+  opacity: 0.6;
+}
+
+@media(max-width: 768px) {
+
+  .nav ul {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .two-cols,
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero {
+    height: 60vh;
+  }
+
+  .content {
+    padding: 1rem;
+  }
+
+  .footer-nav {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 # Auto detect text files and perform LF normalization
 * text=auto
